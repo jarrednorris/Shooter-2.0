@@ -1247,6 +1247,9 @@ MonoBehaviour:
     - Pixabay
 
 
+    Hit Sounds - https://www.autodafe.net/samples/kontakt-libraries/mega-drum-machines-collection-for-kontakt.html
+    - Autodafe
+
 
     All other assets and game created by Jarred Norris'
   m_isRightToLeft: 0
@@ -1275,10 +1278,10 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 18.4
-  m_fontSizeBase: 20
+  m_fontSize: 15
+  m_fontSizeBase: 15
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -1313,15 +1316,15 @@ MonoBehaviour:
   m_firstVisibleCharacter: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: 0, w: -1.1811981}
   m_textInfo:
     textComponent: {fileID: 1727624258}
-    characterCount: 439
+    characterCount: 561
     spriteCount: 0
-    spaceCount: 43
-    wordCount: 59
+    spaceCount: 49
+    wordCount: 72
     linkCount: 0
-    lineCount: 13
+    lineCount: 15
     pageCount: 1
     materialCount: 1
   m_havePropertiesChanged: 0

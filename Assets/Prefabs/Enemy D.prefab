@@ -57,6 +57,8 @@ GameObject:
   - component: {fileID: 114077738483963774}
   - component: {fileID: 114838657577616590}
   - component: {fileID: 114421730109542968}
+  - component: {fileID: 114667239683574022}
+  - component: {fileID: 114206228130250034}
   - component: {fileID: 114248671584513772}
   m_Layer: 9
   m_Name: Enemy D
@@ -172,7 +174,18 @@ MonoBehaviour:
   maxHealth: 100
   onHealthChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 114667239683574022}
+        m_MethodName: playclip
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   onDie:
@@ -211,8 +224,31 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 114667239683574022}
+        m_MethodName: playclip
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &114206228130250034
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1466456759640628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4484d6995ff786540974216752615a93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clip: {fileID: 8300000, guid: a92a7898098beb54a9cde8009ed1ef9f, type: 3}
 --- !u!114 &114248671584513772
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -248,6 +284,18 @@ MonoBehaviour:
   bulletMask:
     serializedVersion: 2
     m_Bits: 256
+--- !u!114 &114667239683574022
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1466456759640628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4484d6995ff786540974216752615a93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clip: {fileID: 8300000, guid: 7b1beb43f22be9e4996c05257049f999, type: 3}
 --- !u!114 &114829230958250676
 MonoBehaviour:
   m_ObjectHideFlags: 1

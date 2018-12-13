@@ -38,6 +38,7 @@ GameObject:
   - component: {fileID: 114414454375332690}
   - component: {fileID: 114110193211511096}
   - component: {fileID: 114464656875265654}
+  - component: {fileID: 114847232778168418}
   - component: {fileID: 114406332337493126}
   m_Layer: 10
   m_Name: Shoot Pickup
@@ -99,19 +100,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 114464656875265654}
-        m_MethodName: PrintMessage
-        m_Mode: 5
+      - m_Target: {fileID: 114406332337493126}
+        m_MethodName: AddBuff
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Oi oi
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 114406332337493126}
-        m_MethodName: AddBuff
+      - m_Target: {fileID: 114847232778168418}
+        m_MethodName: playclip
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -169,6 +170,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1efe9ed5581a23744a563b2d47c108d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114847232778168418
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1942505787288932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4484d6995ff786540974216752615a93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clip: {fileID: 8300000, guid: a6ce1927a3142384a8555d071206550b, type: 3}
 --- !u!212 &212131655788872368
 SpriteRenderer:
   m_ObjectHideFlags: 1

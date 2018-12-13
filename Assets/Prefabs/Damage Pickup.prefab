@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 114916143738015836}
   - component: {fileID: 114357739253691630}
   - component: {fileID: 114717756134876102}
+  - component: {fileID: 114984242200735796}
   - component: {fileID: 114652584876249544}
   m_Layer: 10
   m_Name: Damage Pickup
@@ -99,19 +100,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 114717756134876102}
-        m_MethodName: PrintMessage
-        m_Mode: 5
+      - m_Target: {fileID: 114652584876249544}
+        m_MethodName: AddBuff
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Oi oi
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 114652584876249544}
-        m_MethodName: AddBuff
+      - m_Target: {fileID: 114847232778168418, guid: bd7d33127a6ea3047bdd4ffd58e9c8b5,
+          type: 2}
+        m_MethodName: playclip
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -169,6 +171,18 @@ MonoBehaviour:
   minX: 0
   maxX: 0
   brain: {fileID: 11400000, guid: 68191c0f40c02b845a876d224ef6afa9, type: 2}
+--- !u!114 &114984242200735796
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1063620830442672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4484d6995ff786540974216752615a93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clip: {fileID: 8300000, guid: a6ce1927a3142384a8555d071206550b, type: 3}
 --- !u!212 &212208290704859510
 SpriteRenderer:
   m_ObjectHideFlags: 1

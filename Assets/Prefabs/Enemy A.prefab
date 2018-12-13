@@ -57,6 +57,8 @@ GameObject:
   - component: {fileID: 114077738483963774}
   - component: {fileID: 114838657577616590}
   - component: {fileID: 114421730109542968}
+  - component: {fileID: 114146657141061022}
+  - component: {fileID: 114165945404986724}
   m_Layer: 9
   m_Name: Enemy A
   m_TagString: Enemy
@@ -171,7 +173,19 @@ MonoBehaviour:
   maxHealth: 20
   onHealthChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 114667239683574022, guid: 3014475001991cb4e99c94816508340c,
+          type: 2}
+        m_MethodName: playclip
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   onDie:
@@ -199,8 +213,44 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 114667239683574022, guid: 3014475001991cb4e99c94816508340c,
+          type: 2}
+        m_MethodName: playclip
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &114146657141061022
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1466456759640628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4484d6995ff786540974216752615a93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clip: {fileID: 8300000, guid: 7b1beb43f22be9e4996c05257049f999, type: 3}
+--- !u!114 &114165945404986724
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1466456759640628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4484d6995ff786540974216752615a93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clip: {fileID: 8300000, guid: a92a7898098beb54a9cde8009ed1ef9f, type: 3}
 --- !u!114 &114421730109542968
 MonoBehaviour:
   m_ObjectHideFlags: 1
